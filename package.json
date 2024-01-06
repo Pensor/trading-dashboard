@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxt/image": "latest",
+    "@nuxt/ui": "^2.9.0",
+    "@tailwindcss/typography": "^0.5.10",
+    "nuxt": "^3.9.1"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.9.0"
+  }
+}
