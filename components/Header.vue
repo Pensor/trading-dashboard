@@ -7,7 +7,7 @@
     >
       <div class="lg:flex-1 flex items-center gap-1.5">
         <NuxtLink
-          to="/wissen/algorithm"
+          to="/"
           class="flex items-end gap-1.5 font-bold text-xl text-gray-900 dark:text-white"
           aria-label="Trading Dashboard"
         >
