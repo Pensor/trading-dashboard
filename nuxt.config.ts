@@ -7,6 +7,5 @@ export default defineNuxtConfig({
       preload: ["js", "json"],
       theme: "material-theme"
     }
-  },
-  nitro: { prerender: { failOnError: false } }
+  }
 });
