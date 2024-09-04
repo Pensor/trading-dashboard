@@ -11,7 +11,7 @@
           class="flex items-end gap-1.5 font-bold text-xl text-gray-900 dark:text-white"
           aria-label="Trading Dashboard"
         >
-          <img src="/trading.svg" class="w-auto h-10" />
+          <NuxtImg src="/trading.svg" class="w-auto h-10" />
         </NuxtLink>
       </div>
       <ul class="items-center gap-x-8 hidden lg:flex">
