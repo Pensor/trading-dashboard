@@ -7,7 +7,7 @@
     >
       <div class="lg:flex-1 flex items-center gap-1.5">
         <NuxtLink
-          to="/"
+          to="/wissen/algorithm"
           class="flex items-end gap-1.5 font-bold text-xl text-gray-900 dark:text-white"
           aria-label="Trading Dashboard"
         >
@@ -18,7 +18,7 @@
         <li class="relative">
           <NuxtLink
             class="text-sm/6 font-semibold flex items-center gap-1 hover:text-primary"
-            to="/wissen"
+            to="/wissen/algorithm"
           >
             Wissen
           </NuxtLink>
@@ -26,7 +26,7 @@
         <li class="relative">
           <NuxtLink
             class="text-sm/6 font-semibold flex items-center gap-1 hover:text-primary"
-            to="/strategien"
+            to="/strategien/trendscalp"
           >
             Strategien
           </NuxtLink>
@@ -37,6 +37,14 @@
             to="/journal"
           >
             Journal
+          </NuxtLink>
+        </li>
+        <li class="relative">
+          <NuxtLink
+            class="text-sm/6 font-semibold flex items-center gap-1 hover:text-primary"
+            to="/kalender"
+          >
+            Kalender
           </NuxtLink>
         </li>
       </ul>
