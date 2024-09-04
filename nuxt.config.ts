@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/ui", "@nuxt/image", "@nuxt/content"],
-
   content: {
     highlight: {
       preload: ["js", "json"],
