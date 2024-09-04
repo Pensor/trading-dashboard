@@ -16,7 +16,7 @@ jobs:
           bun-version: latest
       # Pick your own package manager and build script
       - run: bun install
-      - run: bun run generate --preset github_pages
+      - run: bunx nuxt build --preset github_pages
         env:
           NUXT_APP_BASE_URL: /trading-dashboard
       - name: Upload artifact
