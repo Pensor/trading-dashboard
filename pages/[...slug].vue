@@ -5,6 +5,7 @@
       :query="queryContent($route.params.slug[0])"
     >
       <UVerticalNavigation
+        class="sticky top-[105px] h-max"
         :links="
           navigation[0].children.map(link => ({
             label: link.title,

@@ -7,5 +7,14 @@ export default defineNuxtConfig({
       preload: ["js", "json"],
       theme: "material-theme"
     }
+  },
+  icon: {
+    clientBundle: {
+      scan: {
+        // note that when you specify those values, the default behavior will be overridden
+        globInclude: ["components/**/*.vue" /* ... */],
+        globExclude: ["node_modules", "dist" /* ... */]
+      }
+    }
   }
 });
