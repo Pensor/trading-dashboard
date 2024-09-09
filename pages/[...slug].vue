@@ -1,25 +1,20 @@
 <script setup>
-const route = useRoute();
-
-const { data: navigation } = await useAsyncData("navigation", () =>
-  fetchContentNavigation(queryContent(route.params.slug[0]))
-);
-
-const links = computed(() =>
-  navigation.value[0].children.map(link => ({
-    label: link.title,
-    to: link._path
-  }))
-);
+const link = link => ({ label: link.title, to: link._path });
+const mapNav = nav => nav[0].children.map(link);
 </script>
 
 <template>
   <div class="flex flex-col lg:flex-row gap-10">
-    <UHorizontalNavigation :links="links" class="lg:hidden" />
-    <UVerticalNavigation
-      class="sticky top-[105px] h-max hidden lg:block"
-      :links="links"
-    />
+    <ContentNavigation
+      v-slot="{ navigation }"
+      :query="queryContent($route.params.slug[0])"
+    >
+      <UHorizontalNavigation :links="mapNav(navigation)" class="lg:hidden" />
+      <UVerticalNavigation
+        class="sticky top-[105px] h-max hidden lg:block"
+        :links="mapNav(navigation)"
+      />
+    </ContentNavigation>
     <ContentDoc class="dark:invert prose" />
   </div>
 </template>
