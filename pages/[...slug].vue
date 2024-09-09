@@ -37,4 +37,9 @@ img {
 p {
   font-size: 1.25rem;
 }
+
+html {
+  scroll-behavior: smooth;
+  @apply scroll-pt-20;
+}
 </style>
